@@ -6,10 +6,9 @@ url: https://developer.argus.com
 created: '2024-01-15'
 modified: '2024-01-15'
 tags:
-  - APIs
-  - developer
-  - argus
-  - documentation
+  - Argus
+  - Developer
+  - Documentation
 apis:
   - name: Argus Core API
     description: >-
@@ -18,9 +17,9 @@ apis:
     humanURL: https://developer.argus.com/apis/core
     baseURL: https://api.argus.com/v1
     tags:
-      - core
-      - data
-      - management
+      - Core
+      - Data
+      - Management
     properties:
       - type: Documentation
         url: https://developer.argus.com/docs/core-api
@@ -46,9 +45,9 @@ apis:
     humanURL: https://developer.argus.com/apis/analytics
     baseURL: https://analytics-api.argus.com/v1
     tags:
-      - analytics
-      - reporting
-      - metrics
+      - Analytics
+      - Metrics
+      - Reporting
     properties:
       - type: Documentation
         url: https://developer.argus.com/docs/analytics-api

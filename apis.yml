@@ -1,79 +1,82 @@
 name: Argus Developer
-description: API definitions and resources for Argus Developer platform
+description: >-
+  API definitions and resources for Argus Developer platform.
 image: https://example.com/argus-logo.png
 url: https://developer.argus.com
 created: '2024-01-15'
 modified: '2024-01-15'
 tags:
-- APIs
-- developer
-- argus
-- documentation
+  - APIs
+  - developer
+  - argus
+  - documentation
 apis:
-- name: Argus Core API
-  description: Core API for Argus platform providing data access and management capabilities
-  image: https://developer.argus.com/images/core-api.png
-  humanURL: https://developer.argus.com/apis/core
-  baseURL: https://api.argus.com/v1
-  tags:
-  - core
-  - data
-  - management
-  properties:
-  - type: Documentation
-    url: https://developer.argus.com/docs/core-api
-  - type: OpenAPI
-    url: https://developer.argus.com/specs/core-api-openapi.json
+  - name: Argus Core API
+    description: >-
+      Core API for Argus platform providing data access and management capabilities.
+    image: https://developer.argus.com/images/core-api.png
+    humanURL: https://developer.argus.com/apis/core
+    baseURL: https://api.argus.com/v1
+    tags:
+      - core
+      - data
+      - management
+    properties:
+      - type: Documentation
+        url: https://developer.argus.com/docs/core-api
+      - type: OpenAPI
+        url: https://developer.argus.com/specs/core-api-openapi.json
+      - type: Authentication
+        url: https://developer.argus.com/docs/authentication
+      - type: Postman Collection
+        url: https://developer.argus.com/postman/core-api.json
+      - type: Rate Limits
+        url: https://developer.argus.com/docs/rate-limits
+    contact:
+      - type: Support
+        url: https://developer.argus.com/support
+      - type: Email
+        url: mailto:api-support@argus.com
+      - type: Twitter
+        url: https://twitter.com/argusdev
+  - name: Argus Analytics API
+    description: >-
+      Analytics and reporting API for data insights and metrics.
+    image: https://developer.argus.com/images/analytics-api.png
+    humanURL: https://developer.argus.com/apis/analytics
+    baseURL: https://analytics-api.argus.com/v1
+    tags:
+      - analytics
+      - reporting
+      - metrics
+    properties:
+      - type: Documentation
+        url: https://developer.argus.com/docs/analytics-api
+      - type: OpenAPI
+        url: https://developer.argus.com/specs/analytics-api-openapi.json
+      - type: SDKs
+        url: https://developer.argus.com/sdks
+    contact:
+      - type: Support
+        url: https://developer.argus.com/support
+common:
+  - type: Portal
+    url: https://developer.argus.com
+  - type: Getting Started
+    url: https://developer.argus.com/getting-started
   - type: Authentication
     url: https://developer.argus.com/docs/authentication
-  - type: Postman Collection
-    url: https://developer.argus.com/postman/core-api.json
-  - type: Rate Limits
-    url: https://developer.argus.com/docs/rate-limits
-  contact:
-  - type: Support
-    url: https://developer.argus.com/support
-  - type: Email
-    url: mailto:api-support@argus.com
-  - type: Twitter
-    url: https://twitter.com/argusdev
-- name: Argus Analytics API
-  description: Analytics and reporting API for data insights and metrics
-  image: https://developer.argus.com/images/analytics-api.png
-  humanURL: https://developer.argus.com/apis/analytics
-  baseURL: https://analytics-api.argus.com/v1
-  tags:
-  - analytics
-  - reporting
-  - metrics
-  properties:
-  - type: Documentation
-    url: https://developer.argus.com/docs/analytics-api
-  - type: OpenAPI
-    url: https://developer.argus.com/specs/analytics-api-openapi.json
-  - type: SDKs
-    url: https://developer.argus.com/sdks
-  contact:
-  - type: Support
-    url: https://developer.argus.com/support
-common:
-- type: Portal
-  url: https://developer.argus.com
-- type: Getting Started
-  url: https://developer.argus.com/getting-started
-- type: Authentication
-  url: https://developer.argus.com/docs/authentication
-- type: Status
-  url: https://status.argus.com
-- type: Terms of Service
-  url: https://argus.com/terms
-- type: Privacy Policy
-  url: https://argus.com/privacy
-- type: Blog
-  url: https://blog.argus.com
-- type: GitHub Organization
-  url: https://github.com/argus-dev
+  - type: Status
+    url: https://status.argus.com
+  - type: Terms of Service
+    url: https://argus.com/terms
+  - type: Privacy Policy
+    url: https://argus.com/privacy
+  - type: Blog
+    url: https://blog.argus.com
+  - type: GitHub Organization
+    url: https://github.com/argus-dev
 maintainers:
-- name: Argus Developer Relations Team
-  email: devrel@argus.com
-  url: https://developer.argus.com/about
+  - name: Argus Developer Relations Team
+    email: devrel@argus.com
+    url: https://developer.argus.com/about

@@ -40,8 +40,12 @@ apis:
       - type: GettingStarted
         url: https://www.altusgroup.com/support/start-using-argus-intelligence/
 common:
+  - type: DomainSecurity
+    url: security/argus-developer-domain-security.yml
   - type: Website
     url: https://www.altusgroup.com/solutions/argus-developer/
+  - type: Blog
+    url: https://www.altusgroup.com/insights/
   - type: Documentation
     url: https://www.altusgroup.com/argus/downloads/argus-developer/
   - type: GettingStarted

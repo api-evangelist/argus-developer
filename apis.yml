@@ -8,7 +8,19 @@ description: >-
   forecasting, and professional reporting. Part of the ARGUS Intelligence Platform by Altus Group,
   the industry-standard suite for commercial real estate.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/argus-developer.png
 tags:
   - Altus Group
   - Commercial Real Estate

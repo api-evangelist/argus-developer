@@ -26,6 +26,12 @@ tags:
   - Commercial Real Estate
   - Development
   - Feasibility Analysis
+  - Real-Estate
+tags_raw:
+  - Altus Group
+  - Commercial Real Estate
+  - Development
+  - Feasibility Analysis
   - Real Estate
 url: >-
   https://raw.githubusercontent.com/api-evangelist/argus-developer/refs/heads/main/apis.yml
@@ -42,6 +48,11 @@ apis:
       and finance systems.
     humanURL: https://www.altusgroup.com/solutions/argus-developer/
     tags:
+      - Cash Flow
+      - Development
+      - Feasibility
+      - Real-Estate
+    tags_raw:
       - Cash Flow
       - Development
       - Feasibility

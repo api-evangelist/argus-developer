@@ -1,0 +1,119 @@
+generated: '2026-09-06'
+method: probed
+source: >-
+  Direct HTTP probes on 2026-09-06 of every host this record knows — the registrable
+  domain altusgroup.com and its www host, the ARGUS Cloud portal host
+  cloud.altusplatform.com named by the Portal pointer, and service.altusgroup.com,
+  the Altus Group customer service portal linked from the ARGUS Developer solution page.
+provider: ARGUS Developer
+providerId: argus-developer
+description: >-
+  Well-known discovery probe for ARGUS Developer (Altus Group). One real document was
+  served: an OpenID Connect discovery document at service.altusgroup.com, the Salesforce
+  Experience Cloud-backed Altus Group customer service and knowledge-base portal. It
+  describes the identity surface customers authenticate against for support and portal
+  access, NOT an ARGUS Developer product API — ARGUS Developer publishes no public API.
+  Every other path on every host 404d or returned an SPA shell.
+notes:
+  - >-
+    cloud.altusplatform.com is a single-page application with a catch-all route — it
+    answers HTTP 200 with the same ~2KB "ARGUS Cloud" HTML shell for EVERY path,
+    including a deliberately nonsensical control path
+    (/nonexistent-path-check-12345, 200 text/html 2037 bytes). None of its 200s are
+    documents and none are counted as hits.
+  - >-
+    www.altusgroup.com is a Next.js site that returns a real HTTP 404 with an
+    __next_error__ body for unmatched paths, so its 404s are genuine.
+  - >-
+    service.altusgroup.com answers 401 for all other /.well-known/ paths, which is the
+    Salesforce community default, not a suppressed document.
+hosts:
+  - host: www.altusgroup.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: altusgroup.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+  - host: cloud.altusplatform.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+      - path: /.well-known/openid-configuration
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+      - path: /.well-known/api-catalog
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+      - path: /.well-known/agent-card.json
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+      - path: /.well-known/agent.json
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+      - path: /llms.txt
+        status: 200
+        note: SPA catch-all HTML shell, not a document — treated as a miss
+  - host: service.altusgroup.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        content_type: application/json;charset=UTF-8
+        file: argus-developer-openid-configuration.json
+        note: >-
+          Real OpenID Connect discovery document, issuer https://service.altusgroup.com.
+          Salesforce Experience Cloud identity provider fronting the Altus Group customer
+          service portal linked from the ARGUS Developer solution page.
+      - path: /.well-known/security.txt
+        status: 401
+      - path: /.well-known/oauth-authorization-server
+        status: 401
+      - path: /.well-known/api-catalog
+        status: 401
+      - path: /.well-known/ai-plugin.json
+        status: 401
+      - path: /.well-known/agent-card.json
+        status: 401
+      - path: /.well-known/agent.json
+        status: 401
+      - path: /llms.txt
+        status: 401
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

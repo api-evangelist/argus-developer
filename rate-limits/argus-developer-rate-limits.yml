@@ -4,89 +4,38 @@ schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main
 provider: ARGUS Developer
 providerId: argus-developer
 created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-04'
-tags:
-  - Altus Group
-  - Commercial Real Estate
-  - Development
-  - Feasibility Analysis
-  - Real Estate
-  - Rate Limiting
-  - Quotas
-  - Throttling
-description: Machine-readable rate limit definitions for the ARGUS Developer API surface. Captures per-tier
-  quotas, burst behavior, response signaling, and recovery semantics. Defaults are scaffold values to
-  be replaced with published provider limits.
-headers:
-  limit: X-RateLimit-Limit
-  remaining: X-RateLimit-Remaining
-  reset: X-RateLimit-Reset
-  retryAfter: Retry-After
-  policy: RateLimit-Policy
-responseCodes:
-  throttled: 429
-  quotaExceeded: 429
-  serviceUnavailable: 503
-limits:
-  - tier: free
-    name: Free Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 10
-    burst: 20
-    timeFrame: minute
-    applies:
-      - ARGUS Developer API
-  - tier: free
-    name: Free Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 1000
-    timeFrame: month
-    applies:
-      - ARGUS Developer API
-  - tier: professional
-    name: Professional Tier Default
-    scope: api-key
-    metric: requests_per_minute
-    limit: 100
-    burst: 200
-    timeFrame: minute
-    applies:
-      - ARGUS Developer API
-  - tier: professional
-    name: Professional Tier Monthly Quota
-    scope: api-key
-    metric: requests_per_month
-    limit: 100000
-    timeFrame: month
-    applies:
-      - ARGUS Developer API
-  - tier: enterprise
-    name: Enterprise Negotiated Limit
-    scope: contract
-    metric: requests_per_minute
-    limit: 1000
-    burst: 5000
-    timeFrame: minute
-    applies:
-      - ARGUS Developer API
-policies:
-  - name: Backoff Strategy
-    description: Clients should implement exponential backoff with jitter, honoring the Retry-After header
-      when present.
-  - name: Burst Handling
-    description: Short bursts above the steady-state limit are tolerated up to the documented burst ceiling
-      before throttling engages.
-  - name: Quota Reset
-    description: Monthly quotas reset at the start of each calendar month in UTC. Per-minute and per-second
-      windows reset on a sliding-window basis.
-  - name: Fair Use
-    description: Even on uncapped enterprise tiers, sustained usage that materially impacts shared infrastructure
-      may be subject to fair-use throttling.
+modified: '2026-09-06'
+generated: '2026-09-06'
+method: searched
+source: https://www.altusgroup.com/argus/downloads/argus-developer/
+description: >-
+  ARGUS Developer publishes no API, and therefore no rate limits, no quota documentation
+  and no throttling response headers. This file replaces a 2026-05-04 bulk-sweep scaffold
+  that invented free / professional / enterprise limits (10, 100 and 1000 requests per
+  minute) and a full X-RateLimit-* header set. None of those values were ever published
+  by Altus Group; they have been removed rather than left to be read as provider facts.
+limit_count: 0
+headers: {}
+responseCodes: {}
+limits: []
+policies: []
+evidence:
+  - url: https://www.altusgroup.com/argus/downloads/argus-developer/
+    status: 200
+    note: Product downloads and documentation page. No API, no limits documented.
+  - url: https://www.altusgroup.com/solutions/argus-developer/
+    status: 200
+    note: Product solution page. No API or developer surface referenced.
+  - url: https://cloud.altusplatform.com/openapi.json
+    status: 200
+    note: >-
+      SPA catch-all HTML shell — the same 2KB body is returned for a control path that
+      cannot exist. Not a spec, so no limits could be derived from one.
+notes:
+  - >-
+    The ARGUS API that Altus Group markets is a cloud integration gateway for ARGUS
+    Enterprise and other cloud-enabled ARGUS solutions. It is not an ARGUS Developer
+    surface and is not recorded here. See the argus and argus-enterprise records.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

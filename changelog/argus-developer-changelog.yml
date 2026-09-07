@@ -1,0 +1,52 @@
+specification: API Commons ChangeLog
+specificationVersion: '0.1'
+provider: ARGUS Developer
+providerId: argus-developer
+generated: '2026-09-06'
+method: searched
+source: https://www.altusgroup.com/argus/downloads/argus-developer/
+description: >-
+  ARGUS Developer publishes dated release notes per software version on its downloads
+  page. There is no rolling developer changelog and no API changelog, because the product
+  ships no API. Entries below are the release notes Altus Group links publicly, with the
+  dates as published.
+scheme: per-release release notes (PDF), published on the product downloads page
+changelog_url: https://www.altusgroup.com/argus/downloads/argus-developer/
+current_version: 8.3.6
+entries:
+  - version: 8.3.6
+    date: '2025-10-11'
+    breaking: unknown
+    additions: unknown
+    highlights: >-
+      Release notes for ARGUS Developer 8.3.6, published as a PDF on the downloads page.
+      Shipped in English, Deutsch and French. Contents not summarised here because the
+      notes are distributed as a SharePoint-hosted PDF rather than a web page.
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+  - version: 8.3.4
+    date: '2023-10-05'
+    breaking: unknown
+    additions: unknown
+    highlights: >-
+      Release notes for ARGUS Developer 8.3.4, published as a PDF on the downloads page.
+      Shipped in English, Deutsch and French.
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+  - version: '7.7'
+    date: null
+    breaking: unknown
+    additions: unknown
+    highlights: >-
+      Spanish-language build still listed on the downloads page. No dated release note is
+      published alongside it; an installation guide is.
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+notes:
+  - >-
+    Two years elapsed between the 8.3.4 (2023-10-05) and 8.3.6 (2025-10-11) release
+    notes, and support for the on-premise product ended 2026-03-31. Read the cadence
+    alongside lifecycle/argus-developer-lifecycle.yml.
+  - >-
+    Release-note and guide PDFs are hosted on altusgroup.sharepoint.com and are not
+    linkable as stable public documents, so their URLs are not recorded as pointers.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

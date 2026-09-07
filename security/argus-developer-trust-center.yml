@@ -1,0 +1,114 @@
+specification: API Commons Trust Center
+specificationVersion: '0.1'
+provider: ARGUS Developer
+providerId: argus-developer
+generated: '2026-09-06'
+method: searched
+source: https://www.altusgroup.com/trust-center/
+description: >-
+  Altus Group publishes a public Trust Center covering the ARGUS product family,
+  including ARGUS Developer, which is delivered over the ARGUS Cloud platform. Named
+  certifications and audit reports were read verbatim from the Trust Center compliance
+  section on 2026-09-06.
+trust_center:
+  url: https://www.altusgroup.com/trust-center/
+  status: 200
+  public: true
+  owner: Altus Group
+  note: >-
+    Company-level trust center for Altus Group. ARGUS Developer inherits the ARGUS Cloud
+    control environment because the product is delivered over ARGUS Cloud.
+certifications:
+  - name: SOC 3 Type 2
+    scope: ARGUS Cloud
+    published: true
+    evidence: https://www.altusgroup.com/trust-center/
+    note: >-
+      ARGUS Developer is delivered over the ARGUS Cloud platform, so this is the report
+      that covers this product's hosting environment.
+  - name: SOC 3 Type 2
+    scope: ARGUS Intelligence Platform
+    published: true
+    evidence: https://www.altusgroup.com/trust-center/
+  - name: SOC 3 Type 2
+    scope: Fairways
+    published: true
+    evidence: https://www.altusgroup.com/trust-center/
+  - name: ISO/IEC 27001
+    scope: Altus Group (organization-wide)
+    published: true
+    evidence: https://www.altusgroup.com/trust-center/
+  - name: SOC 2 Type II
+    scope: Altus Group platforms
+    published: false
+    availability: on-request
+    evidence: https://www.altusgroup.com/trust-center/
+    note: >-
+      Trust Center states verbatim "please reach out to us to obtain our detailed SOC2
+      Type II reports" — the report exists but is not published; it is gated behind a
+      request.
+programs:
+  - name: Security program approach
+    url: https://www.altusgroup.com/trust-center/
+    description: >-
+      Zero-trust operating model and a 3-lines-of-defense model, with regular independent
+      external audits.
+  - name: Secure development
+    url: https://www.altusgroup.com/trust-center/secure-development/
+    status: 200
+  - name: Assurance standard
+    url: https://www.altusgroup.com/trust-center/assurance-standard/
+    status: 200
+  - name: Incident response plan
+    url: https://www.altusgroup.com/trust-center/incident-response-plan/
+    status: 200
+  - name: Access control
+    url: https://www.altusgroup.com/trust-center/access-control/
+    status: 200
+  - name: Cryptographic standard
+    url: https://www.altusgroup.com/trust-center/cryptographic-standard/
+    status: 200
+  - name: Network security
+    url: https://www.altusgroup.com/trust-center/network-security/
+    status: 200
+  - name: Change management
+    url: https://www.altusgroup.com/trust-center/change-management/
+    status: 200
+  - name: Risk management
+    url: https://www.altusgroup.com/trust-center/risk-management/
+    status: 200
+  - name: HR security
+    url: https://www.altusgroup.com/trust-center/hr-security/
+    status: 200
+  - name: Physical and environmental security
+    url: https://www.altusgroup.com/trust-center/physical-environmental-security/
+    status: 200
+  - name: Corporate governance
+    url: https://www.altusgroup.com/trust-center/corporate-governance/
+    status: 200
+  - name: Mobile devices and laptops
+    url: https://www.altusgroup.com/trust-center/mobile-devices-laptops/
+    status: 200
+privacy:
+  - name: GDPR compliance statement
+    url: https://www.altusgroup.com/legal/gdpr/
+  - name: GDPR subprocessors
+    url: https://www.altusgroup.com/legal/gdpr-subprocessors/
+  - name: CCPA / California resident privacy notice
+    url: https://www.altusgroup.com/legal/california-resident-privacy-notice/
+  - name: Privacy policy
+    url: https://www.altusgroup.com/legal/privacy-policy/
+gaps:
+  - >-
+    No vulnerability disclosure or responsible-disclosure policy is published. The Trust
+    Center secure-development, assurance-standard and incident-response pages describe an
+    internal vulnerability management process but name no external reporting channel.
+  - >-
+    No /.well-known/security.txt is served on any Altus Group host
+    (www.altusgroup.com 404, altusgroup.com 404, service.altusgroup.com 401).
+  - No bug bounty program was found on HackerOne, Bugcrowd or Intigriti.
+  - >-
+    SOC 2 Type II reports are request-gated; only the SOC 3 summaries are public.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

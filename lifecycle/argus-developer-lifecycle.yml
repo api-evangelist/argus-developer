@@ -1,0 +1,71 @@
+specification: API Commons Lifecycle
+specificationVersion: '0.1'
+provider: ARGUS Developer
+providerId: argus-developer
+generated: '2026-09-06'
+method: searched
+source: https://www.altusgroup.com/argus/downloads/argus-developer/
+description: >-
+  Product lifecycle for ARGUS Developer. Altus Group publishes an explicit end-of-support
+  date for the on-premise product and a stated migration target, plus dated release notes
+  per version. There is no API versioning or deprecation policy because ARGUS Developer
+  publishes no API.
+versioning:
+  scheme: semantic-ish product version (major.minor.patch)
+  current_version: 8.3.6
+  current_version_released: '2025-10-11'
+  previous_version: 8.3.4
+  previous_version_released: '2023-10-05'
+  evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+  note: >-
+    Versions are shipped desktop/Citrix-delivered software builds, not API versions.
+    Localized builds ship per version (English, Deutsch, French; 7.7 additionally in
+    Spanish).
+deprecation:
+  policy_published: true
+  policy_url: https://www.altusgroup.com/argus/downloads/argus-developer/
+  statement: >-
+    "As of March 31, 2026, Altus Group no longer offers support for ARGUS Developer
+    on-premise. We recommend moving to ARGUS Developer Cloud."
+  end_of_support: '2026-03-31'
+  affected: ARGUS Developer (on-premise)
+  successor: ARGUS Developer Cloud
+  successor_url: https://www.altusgroup.com/solutions/argus-developer/
+  quoted_verbatim: true
+  evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+  headers:
+    sunset: not applicable — no HTTP API surface
+    deprecation: not applicable — no HTTP API surface
+  note: >-
+    Altus Group has also stated it will migrate ARGUS Developer onto the ARGUS
+    Intelligence Platform on a timeline separate from ARGUS Enterprise. That migration
+    has no published date, so it is recorded as direction, not as a dated commitment.
+platform_direction:
+  - name: Move to ARGUS Developer Cloud
+    status: active
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+  - name: Eventual consolidation onto the ARGUS Intelligence Platform
+    status: announced, undated
+    evidence: https://www.altusgroup.com/solutions/argus-intelligence/
+status_page:
+  published: false
+  probed:
+    - url: https://status.altusgroup.com/
+      status: 0
+      note: host does not resolve
+    - url: https://status.altusplatform.com/
+      status: 0
+      note: host does not resolve
+  note: >-
+    No public status page was found. Platform update notices are published as web pages
+    per product, e.g. https://www.altusgroup.com/support/argus-enterprise-platform-updates/
+    (ARGUS Enterprise); no equivalent page exists for ARGUS Developer.
+sla:
+  published: false
+  note: >-
+    No public SLA document. Support is delivered through the Altus Group service portal
+    at https://service.altusgroup.com/s/ under the customer subscription agreement.
+deprecated_operations: []
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

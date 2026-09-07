@@ -1,0 +1,139 @@
+specification: API Commons Conformance
+specificationVersion: '0.1'
+provider: ARGUS Developer
+providerId: argus-developer
+generated: '2026-09-06'
+method: probed
+source: >-
+  Live probes of Altus Group hosts on 2026-09-06 plus the published Altus Group Trust
+  Center. Every conforms:true entry below is backed by a document we fetched; every
+  conforms:false entry is an absence we personally probed.
+description: >-
+  Cross-cutting standards conformance for ARGUS Developer (Altus Group). ARGUS Developer
+  publishes no API, so the API-shaped standards are all recorded false against probed
+  evidence. The one positive is the OpenID Connect discovery document Altus Group serves
+  on its customer service portal host.
+conformance:
+  - id: oidc
+    name: OpenID Connect Discovery 1.0
+    conforms: true
+    evidence: https://service.altusgroup.com/.well-known/openid-configuration
+    detail: >-
+      HTTP 200 application/json. Valid discovery document, issuer
+      https://service.altusgroup.com, with authorization_endpoint, token_endpoint,
+      userinfo_endpoint, jwks_uri, registration_endpoint, introspection_endpoint,
+      revocation_endpoint and end_session_endpoint. Saved verbatim to
+      well-known/argus-developer-openid-configuration.json.
+    scope: >-
+      Altus Group customer service and knowledge-base portal (Salesforce Experience
+      Cloud). NOT an ARGUS Developer product API.
+  - id: oauth2
+    name: OAuth 2.0
+    conforms: true
+    evidence: https://service.altusgroup.com/.well-known/openid-configuration
+    detail: >-
+      grant_types_supported [authorization_code, refresh_token];
+      token_endpoint_auth_methods_supported [client_secret_post, client_secret_basic,
+      private_key_jwt]; response_types_supported [code, token, token id_token].
+    scope: Customer service portal identity surface only.
+  - id: rfc7636-pkce
+    name: PKCE (RFC 7636)
+    conforms: true
+    evidence: https://service.altusgroup.com/.well-known/openid-configuration
+    detail: code_challenge_methods_supported ["S256"].
+    scope: Customer service portal identity surface only.
+  - id: rfc7591-dcr
+    name: OAuth 2.0 Dynamic Client Registration (RFC 7591)
+    conforms: true
+    evidence: https://service.altusgroup.com/.well-known/openid-configuration
+    detail: >-
+      registration_endpoint https://service.altusgroup.com/services/oauth2/register is
+      advertised. Advertised, not exercised — we did not attempt a registration.
+    scope: Customer service portal identity surface only.
+  - id: rfc9449-dpop
+    name: OAuth 2.0 Demonstrating Proof of Possession (RFC 9449)
+    conforms: true
+    evidence: https://service.altusgroup.com/.well-known/openid-configuration
+    detail: dpop_signing_alg_values_supported [RS256, RS384, RS512, ES256, ES384, ES512, EdDSA].
+    scope: Customer service portal identity surface only.
+  - id: openapi
+    name: OpenAPI
+    conforms: false
+    evidence: https://cloud.altusplatform.com/openapi.json
+    detail: >-
+      No OpenAPI is published anywhere. cloud.altusplatform.com answers 200 with the same
+      ~2KB SPA HTML shell for /openapi.json, /swagger.json, /api-docs AND for a control
+      path that cannot exist (/nonexistent-path-check-12345), so none of those 200s is a
+      spec. www.altusgroup.com/openapi.json is a real 404.
+  - id: asyncapi
+    name: AsyncAPI
+    conforms: false
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+    detail: No event, streaming or webhook surface is documented for ARGUS Developer.
+  - id: graphql
+    name: GraphQL
+    conforms: false
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+    detail: No GraphQL endpoint is documented or discoverable.
+  - id: rfc9457
+    name: Problem Details for HTTP APIs (RFC 9457)
+    conforms: false
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+    detail: No API, therefore no error envelope is published.
+  - id: rfc8594
+    name: Sunset HTTP Header (RFC 8594)
+    conforms: false
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+    detail: >-
+      An end-of-support date IS published in prose (2026-03-31, on-premise), but there is
+      no HTTP surface on which a Sunset or Deprecation header could be served. Recorded
+      in lifecycle/argus-developer-lifecycle.yml.
+  - id: idempotency
+    name: Idempotency keys
+    conforms: false
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+    detail: No API, therefore no replay-protection mechanism.
+  - id: pagination
+    name: Documented pagination
+    conforms: false
+    evidence: https://www.altusgroup.com/argus/downloads/argus-developer/
+    detail: No API.
+  - id: iso27001
+    name: ISO/IEC 27001
+    conforms: true
+    evidence: https://www.altusgroup.com/trust-center/
+    detail: >-
+      Altus Group ISO27001 certification is listed by name in the Trust Center compliance
+      section, organization-wide.
+  - id: soc3
+    name: SOC 3 Type 2
+    conforms: true
+    evidence: https://www.altusgroup.com/trust-center/
+    detail: >-
+      SOC 3 Type 2 reports published for ARGUS Cloud (the platform ARGUS Developer is
+      delivered over), the ARGUS Intelligence Platform and Fairways.
+  - id: soc2
+    name: SOC 2 Type II
+    conforms: unknown
+    evidence: https://www.altusgroup.com/trust-center/
+    detail: >-
+      Trust Center says the detailed SOC 2 Type II reports exist but must be requested.
+      Recorded as unknown rather than true because we could not read the report.
+  - id: gdpr
+    name: GDPR
+    conforms: true
+    evidence: https://www.altusgroup.com/legal/gdpr/
+    detail: >-
+      Published GDPR compliance statement plus a maintained subprocessor list at
+      https://www.altusgroup.com/legal/gdpr-subprocessors/.
+domain_standards:
+  checked: true
+  found: none
+  detail: >-
+    Probed the contract surface for a declared commercial-real-estate domain standard —
+    OSCRE, RETS/RESO, MISMO, BOMA chart-of-accounts, NCREIF/PREA reporting. None is
+    declared anywhere machine-readable, and there is no contract in which such a
+    declaration could appear. Reward-only dimension: nothing is asserted.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

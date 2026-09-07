@@ -1,0 +1,102 @@
+# ARGUS Developer
+
+> ARGUS Developer is real estate development software from Altus Group for property
+> developers, appraisers, consultants and financiers, covering development pro forma
+> modeling, residual land value analysis, scenario comparison, cash flow forecasting and
+> reporting across multi-stage development projects. It is part of the ARGUS suite and is
+> delivered over the ARGUS Cloud platform.
+
+Generated 2026-09-06 by the API Evangelist enrichment pipeline from this repository's
+apis.yml and artifacts. Method: generated. Altus Group serves no llms.txt of its own
+(https://www.altusgroup.com/llms.txt returned 404 on 2026-09-06).
+
+## Important: no public API
+
+ARGUS Developer does not publish an API, an OpenAPI or any other machine-readable
+contract, an SDK, a developer portal or a sandbox. This was probed, not assumed:
+
+- https://www.altusgroup.com/openapi.json — 404
+- https://cloud.altusplatform.com/openapi.json — 200, but a single-page-app HTML shell;
+  the same body is returned for a control path that cannot exist
+- https://developer.altusgroup.com/, https://docs.altusgroup.com/,
+  https://api.altusgroup.com/, https://developer.altusplatform.com/ — do not resolve
+- https://api.argusenterprise.com/ — resolves, but the domain is parked and listed for
+  sale on HugeDomains; it is NOT an Altus Group host. Any claim that ARGUS runs an API at
+  api.argusenterprise.com is false.
+
+The "ARGUS API" that Altus Group markets is a cloud integration gateway for ARGUS
+Enterprise and other cloud-enabled ARGUS solutions, not an ARGUS Developer surface.
+Its former product page (https://www.altusgroup.com/argus/products/argus-api/) now
+redirects to https://www.altusgroup.com/argus/.
+
+## Lifecycle — read this first
+
+Altus Group states verbatim on the ARGUS Developer downloads page: "As of March 31, 2026,
+Altus Group no longer offers support for ARGUS Developer on-premise. We recommend moving
+to ARGUS Developer Cloud." Latest published build is 8.3.6 (release notes dated
+2025-10-11); the prior build 8.3.4 is dated 2023-10-05.
+
+## Product
+
+- Solution page: https://www.altusgroup.com/solutions/argus-developer/
+- Downloads, release notes, installation and data-import guides: https://www.altusgroup.com/argus/downloads/argus-developer/
+- Getting started: https://www.altusgroup.com/support/start-using-argus-intelligence/
+- Training: https://www.altusgroup.com/argus/training/
+- ARGUS Cloud portal (login): https://cloud.altusplatform.com/login
+- Support portal and knowledge base: https://service.altusgroup.com/s/
+- Support: https://www.altusgroup.com/support/
+
+## Capabilities
+
+- Development pro forma modeling for multi-stage projects (land, construction, sales)
+- Residual land value analysis to determine maximum land bid prices
+- Scenario analysis and side-by-side comparison
+- Cash flow forecasting with budget-to-actual tracking
+- Sensitivity analysis across costs, revenues, timing and interest rates
+- Debt, equity and joint-venture funding structures
+- 60+ reports for internal stakeholders and investor communication
+- Cloud delivery over the ARGUS Cloud platform
+
+## Pricing
+
+Not published. The solution page says only that several subscription plans exist and that
+multi-year discounts are available; every route is a contact-sales form. No prices, tier
+names, quotas or currency appear anywhere on altusgroup.com for this product.
+
+## Security and compliance
+
+Altus Group publishes a Trust Center at https://www.altusgroup.com/trust-center/ naming
+SOC 3 Type 2 for ARGUS Cloud, the ARGUS Intelligence Platform and Fairways, plus
+organization-wide ISO/IEC 27001. SOC 2 Type II reports exist but are request-gated. No
+vulnerability disclosure policy, security.txt or bug bounty was found.
+
+## Discovery documents
+
+One real well-known document is served across all Altus Group hosts probed: an OpenID
+Connect discovery document at
+https://service.altusgroup.com/.well-known/openid-configuration (issuer
+https://service.altusgroup.com). It describes the Salesforce Experience Cloud identity
+provider behind the Altus Group customer service portal, not a product API.
+
+## Artifacts in this repository
+
+- apis.yml — the API Evangelist provider record
+- well-known/argus-developer-well-known.yml — well-known probe index across four hosts
+- well-known/argus-developer-openid-configuration.json — the OIDC document, verbatim
+- security/argus-developer-trust-center.yml — named certifications and program pages
+- security/argus-developer-domain-security.yml — TLS / HSTS / DNS posture
+- conformance/argus-developer-conformance.yml — standards conformance, positives and probed absences
+- lifecycle/argus-developer-lifecycle.yml — versions, end-of-support, successor product
+- changelog/argus-developer-changelog.yml — published release notes
+- plans/argus-developer-plans-pricing.yml — plan_count 0, contact-sales
+- rate-limits/argus-developer-rate-limits.yml — limit_count 0, no API
+- blogs/ — posts pulled from https://www.altusgroup.com/insights/
+
+## Legal
+
+- Privacy policy: https://www.altusgroup.com/legal/privacy-policy/
+- Legal index: https://www.altusgroup.com/legal/
+- GDPR: https://www.altusgroup.com/legal/gdpr/
+
+No Terms of Use page is published; https://www.altusgroup.com/terms-of-use/ returns 404
+and the legal index links no terms-of-service document.

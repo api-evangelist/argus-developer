@@ -37,13 +37,14 @@ tags:
   - Commercial Real Estate
   - Development
   - Feasibility Analysis
-  - Real-Estate
+  - Real Estate
 tags_raw:
   - Altus Group
   - Commercial Real Estate
   - Development
   - Feasibility Analysis
   - Real Estate
+  - Real-Estate
 url: >-
   https://raw.githubusercontent.com/api-evangelist/argus-developer/refs/heads/main/apis.yml
 created: '2024-01-15'
@@ -51,6 +52,7 @@ modified: '2026-09-06'
 specificationVersion: '0.23'
 apis:
   - aid: argus-developer:argus-developer-api
+    x-published: false
     name: ARGUS Developer API
     description: >-
       Altus Group publishes no public API, OpenAPI or developer program for ARGUS
@@ -67,12 +69,13 @@ apis:
       - Cash Flow
       - Development
       - Feasibility
-      - Real-Estate
+      - Real Estate
     tags_raw:
       - Cash Flow
       - Development
       - Feasibility
       - Real Estate
+      - Real-Estate
     properties:
       - type: Documentation
         url: https://www.altusgroup.com/argus/downloads/argus-developer/

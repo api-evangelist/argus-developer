@@ -82,6 +82,8 @@ apis:
       - type: GettingStarted
         url: https://www.altusgroup.com/support/start-using-argus-intelligence/
 common:
+  - type: FinOps
+    url: finops/argus-developer-finops.yml
   - type: DomainSecurity
     url: security/argus-developer-domain-security.yml
   - type: Website

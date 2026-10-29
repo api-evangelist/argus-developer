@@ -1,4 +1,4 @@
-# ARGUS Developer (argus-developer)
+# ARGUS Developer
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,81 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-ARGUS Developer is a cloud-based real estate development software platform by Altus Group that enables property developers, appraisers, consultants, and financiers to manage complex, multi-stage development projects from initial feasibility through delivery. It provides development pro forma modeling, residual land value analysis, scenario comparison, cash flow forecasting, and professional reporting. Part of the ARGUS Intelligence Platform by Altus Group.
+ARGUS Developer is a cloud-based real estate development software platform by Altus Group that enables property developers, appraisers, consultants, and financiers to manage complex, multi-stage development projects from initial feasibility through delivery. It provides development pro forma modeling, residual land value analysis, scenario comparison, cash flow forecasting, and professional reporting. Part of the ARGUS Intelligence Platform by Altus Group, the industry-standard suite for commercial real estate.
 
-**URL:** [https://www.altusgroup.com/solutions/argus-developer/](https://www.altusgroup.com/solutions/argus-developer/)
+**Areas:** Altus Group · Commercial Real Estate · Development · Feasibility Analysis · Real Estate
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## ARGUS Developer on APIs.io
 
-## Tags:
+Everything profiled for ARGUS Developer is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/argus-developer/](https://apis.io/providers/argus-developer/)** — or go straight to one of the APIs or properties below.
 
- - Altus Group, Commercial Real Estate, Development, Feasibility Analysis, Real Estate
+### APIs (1)
 
-## Timestamps
+- [ARGUS Developer API](https://apis.io/apis/argus-developer/argus-developer-api/) — Altus Group publishes no public API, OpenAPI or developer program for ARGUS Developer. Probed 2026-09-06: no spec on any Altus host, no developer or docs…
 
-- **Created:** 2024-01-15
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### ARGUS Developer API
-The ARGUS Developer API provides programmatic access to development project data, feasibility models, cash flow projections, scenario analysis, and reporting within the ARGUS Developer platform.
+#### Security (2)
 
-**Human URL:** [https://www.altusgroup.com/solutions/argus-developer/](https://www.altusgroup.com/solutions/argus-developer/)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Argus Developer Domain Security](https://apis.io/security/argus-developer/argus-developer-domain-security/)
+- [Argus Developer Trust Center](https://apis.io/security/argus-developer/argus-developer-trust-center/)
 
- - Cash Flow, Development, Feasibility, Real Estate
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://www.altusgroup.com/argus/downloads/argus-developer/)
-- [GettingStarted](https://www.altusgroup.com/support/start-using-argus-intelligence/)
+- [Argus Developer Plans Pricing](https://apis.io/plans/argus-developer/argus-developer-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
+
+Published request limits.
+
+- [Argus Developer Rate Limits](https://apis.io/rate-limits/argus-developer/argus-developer-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Argus Developer Finops](https://apis.io/finops/argus-developer/argus-developer-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.altusgroup.com/solutions/argus-developer/)
 - [Documentation](https://www.altusgroup.com/argus/downloads/argus-developer/)
-- [Portal](https://cloud.altusplatform.com/login)
+- [Getting started](https://www.altusgroup.com/support/start-using-argus-intelligence/)
 - [Support](https://www.altusgroup.com/support/)
-- [Training](https://www.altusgroup.com/argus/training/)
-- [TermsOfService](https://www.altusgroup.com/terms-of-use/)
-- [PrivacyPolicy](https://www.altusgroup.com/privacy-policy/)
+- [Blog](https://www.altusgroup.com/insights/)
+- [Privacy policy](https://www.altusgroup.com/legal/privacy-policy/)
+- [GitHub](https://github.com/AltusGroup)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Development Pro Forma | Configurable financial modeling for multi-stage development projects. |
-| Residual Land Value Analysis | Evaluate acquisition and disposal values for development sites. |
-| Scenario Analysis | Compare multiple development scenarios to assess risk and optimize outcomes. |
-| Cash Flow Forecasting | Detailed project cash flow modeling with budget-to-actual tracking. |
-| Sensitivity Analysis | Stress-test project assumptions by varying costs, revenues, and timing. |
-| Flexible Funding Structures | Model debt, equity, and joint venture funding arrangements. |
-| Professional Reporting | Generate 60+ detailed reports for stakeholders and investors. |
-| Cloud Delivery | Cloud-based platform accessible via ARGUS Cloud. |
+**Kin Score 26.5** — thin · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 64.3 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 26.3 |
 
-| Name | Description |
-|------|-------------|
-| Development Feasibility | Assess the financial viability of new development projects. |
-| Land Acquisition Analysis | Calculate residual land values for competitive bid prices. |
-| Development Finance | Model financing structures for lenders and equity partners. |
-| Portfolio Development Management | Track multiple active development projects across a portfolio. |
-| Investor Reporting | Generate professional reports for investors and lenders. |
+**Agent readiness 17.6** — agent-aware
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| ARGUS Enterprise | Seamless transition from development to stabilized asset management. |
-| ARGUS Intelligence Platform | Portfolio-level analytics and reporting integration. |
-| Yardi | Integrate lease and property management data. |
-| MRI Software | Connect MRI property management data with development models. |
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/argus-developer/](https://apis.io/providers/argus-developer/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for ARGUS Developer: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/argus-developer/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
